@@ -56,7 +56,7 @@ bool insertSorted(List *list, DATA item){
 }
 
 bool insertAt(List *list, DATA item, int loc){
-	if(list->elems[loc-1] == NULL){
+	if(list->elems[loc-1] == 0){
 		list->elems[loc-1] = item;
 	}
 	else{
